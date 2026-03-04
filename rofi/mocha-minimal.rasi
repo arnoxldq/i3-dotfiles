@@ -1,0 +1,92 @@
+/* -------------------------------------------------
+   Catppuccin Mocha - Minimal FIXED (No White)
+--------------------------------------------------*/
+
+configuration {
+    modi: "drun";
+    show-icons: false;
+}
+
+/* ---------------- Global ---------------- */
+
+* {
+    bg:        #1e1e2e;
+    bg-alt:    #313244;
+    fg:        #cdd6f4;
+    lavender:  #b4befe;
+    mauve:     #cba6f7;
+    overlay:   #7f849c;
+
+   font: "Inconsolata Nerd Font 12";
+}
+
+/* ---------------- Window ---------------- */
+
+window {
+    width: 750px;
+    location: center;
+    anchor: center;
+    border: 2px;
+    border-color: @lavender;
+    border-radius: 0px;
+    padding: 25px;
+    background-color: @bg;
+}
+
+/* ---------------- Layout ---------------- */
+
+mainbox {
+    spacing: 15px;
+    background-color: @bg;
+}
+
+/* Search bar container */
+inputbar {
+    background-color: @bg-alt;
+    padding: 8px 12px;
+}
+
+/* Remove prompt */
+prompt {
+    enabled: false;
+}
+
+/* Search text */
+entry {
+    background-color: @bg-alt;
+    text-color: @fg;
+    placeholder: "Search...";
+    placeholder-color: @overlay;
+}
+
+/* ---------------- List ---------------- */
+
+listview {
+    columns: 1;
+    lines: 8;
+    spacing: 6px;
+    scrollbar: false;
+    background-color: @bg;
+}
+
+/* ---------------- Items ---------------- */
+
+element normal {
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+textbox {
+    background-color: @bg;
+    text-color: @fg;
+}

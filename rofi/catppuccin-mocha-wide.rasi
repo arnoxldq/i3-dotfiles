@@ -1,0 +1,91 @@
+/* -----------------------------------------------------
+   Catppuccin Mocha - Wide Minimal (Like Screenshot)
+----------------------------------------------------- */
+
+@define-color rosewater #f5e0dc;
+@define-color flamingo  #f2cdcd;
+@define-color pink      #f5c2e7;
+@define-color mauve     #cba6f7;
+@define-color red       #f38ba8;
+@define-color peach     #fab387;
+@define-color yellow    #f9e2af;
+@define-color green     #a6e3a1;
+@define-color teal      #94e2d5;
+@define-color sky       #89dceb;
+@define-color sapphire  #74c7ec;
+@define-color blue      #89b4fa;
+@define-color lavender  #b4befe;
+@define-color text      #cdd6f4;
+@define-color overlay1  #7f849c;
+@define-color surface0  #313244;
+@define-color base      #1e1e2e;
+
+/* Global */
+* {
+    font: "Inconsolata Nerd Font 14";
+    background-color: @base;
+    text-color: @text;
+}
+
+/* Window */
+window {
+    width: 900px;
+    border: 2px;
+    border-color: @lavender;
+    border-radius: 0px;
+    padding: 25px;
+    location: center;
+}
+
+/* Main layout */
+mainbox {
+    spacing: 20px;
+}
+
+/* Input bar */
+inputbar {
+    spacing: 10px;
+    children: [ prompt, entry ];
+}
+
+/* Search icon */
+prompt {
+    text-color: @pink;
+    font: "Inconsolata Nerd Font 16";
+}
+
+/* Entry */
+entry {
+    placeholder: "Search...";
+    placeholder-color: @overlay1;
+    text-color: @text;
+}
+
+/* List */
+listview {
+    columns: 2;
+    lines: 8;
+    spacing: 8px;
+    scrollbar: false;
+}
+
+/* Normal element */
+element {
+    padding: 8px 12px;
+    background-color: transparent;
+    text-color: @text;
+}
+
+/* Selected element */
+element selected {
+    background-color: transparent;
+    border: 2px;
+    border-color: @lavender;
+    text-color: @text;
+}
+
+/* Icon inside element */
+element-icon {
+    size: 20px;
+    margin: 0 10px 0 0;
+}

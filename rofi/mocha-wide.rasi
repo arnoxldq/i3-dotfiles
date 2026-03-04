@@ -1,0 +1,105 @@
+/* -------------------------------------------------
+   Catppuccin Mocha - Wide Clean (WORKING VERSION)
+--------------------------------------------------*/
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+/* ---------------- Colors ---------------- */
+
+* {
+    bg:        #1e1e2e;
+    bg-alt:    #313244;
+    fg:        #cdd6f4;
+    lavender:  #b4befe;
+    mauve:     #cba6f7;
+    pink:      #f5c2e7;
+    overlay:   #7f849c;
+
+    font: "Inconsolata Nerd Font 14";
+}
+
+/* ---------------- Window ---------------- */
+
+window {
+    width: 900px;
+    location: center;
+    anchor: center;
+    border: 2px;
+    border-color: @lavender;
+    border-radius: 0px;
+    padding: 25px;
+    background-color: @bg;
+}
+
+/* ---------------- Layout ---------------- */
+
+mainbox {
+    spacing: 20px;
+    background-color: transparent;
+}
+
+inputbar {
+    spacing: 10px;
+    background-color: transparent;
+}
+
+prompt {
+    text-color: @pink;
+    background-color: transparent;
+}
+
+entry {
+    text-color: @fg;
+    placeholder: "Search...";
+    placeholder-color: @overlay;
+    background-color: transparent;
+}
+
+/* ---------------- List ---------------- */
+
+listview {
+    columns: 2;
+    lines: 8;
+    spacing: 8px;
+    scrollbar: false;
+    background-color: transparent;
+}
+
+/* ---------------- Elements ---------------- */
+
+element {
+    padding: 8px 12px;
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element-icon {
+    size: 20px;
+    margin: 0px 10px 0px 0px;
+}
+
+element-text {
+    text-color: inherit;
+}
+
+/* Selected */
+element selected {
+    background-color: transparent;
+    border: 2px;
+    border-color: @lavender;
+    text-color: @fg;
+}
+
+/* Active (running apps) */
+element active {
+    text-color: @mauve;
+}
+
+/* Urgent */
+element urgent {
+    text-color: #f38ba8;
+}
